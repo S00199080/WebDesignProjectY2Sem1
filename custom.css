@@ -7,7 +7,7 @@ body {
   margin: 0;
   padding: 0;
   width: 200px;
-  background-color: darkgrey;
+  background-color: darkslategrey;
   position: fixed;
   height: 100%;
   overflow: auto;
@@ -36,3 +36,8 @@ div.content {
   height: 1000px;
 }
 
+@media (max-width: 40em) {
+.sidebar {
+display: none;
+}
+}
