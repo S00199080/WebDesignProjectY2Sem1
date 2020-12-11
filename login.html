@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    
+    <link href="css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel = "stylesheet" href="custom.css">
 
@@ -23,11 +23,11 @@
         <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="shop.html">Shop</a>
+        <a class="nav-link" href="#">Shop</a>
       </li>        
     </ul>
     <div class="btn-group">
-    <button type="button" class="btn btn-primary"  id="loginlogout" href="#">Login</button>
+    <button type="button" class="btn btn-primary"  id="loginlogout" href="">Login</button>
     <button type="button" class="btn btn-primary dropdown-toggle dropdown-toggle-split" id="dropdownMenuReference" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-reference="parent">
       <span class="sr-only">Toggle Dropdown</span>
     </button>
@@ -48,14 +48,28 @@
   </div>
 </nav>
       
-      <div class="sidebar">
-</div>
-      <h1 class="PageHead1">General History of the Premier League</h1>
-      <p class="History1">The background of the Premier League was a bleak period for English club football. The attendances were record low and the league were notorious for hooligans. In the 1985-86, the league started without a TV coverage since the parts couldn't agree upon a deal. At this time, the biggest clubs in the country began discussions about launching a new independent league.
+  <h1>Login</h1>
+    <div class="row">    
+        <div class="col-sm col-md-4"> 
+            <div class="alert alert-danger d-none" role="alert" id="loginerror">The username or password you entered is incorrect. <a href="">Forgot your password?</a></div>    
+            <form name="login" action="" method="get">
+                <div class="form-group">
+                    <label for="getEmail">Email address</label>
+                    <input type="email" class="form-control" id="getEmail" name="email" value="wmitty@email.com" required>
+                </div>
+                <div class="form-group">
+                    <label for="getPassword1">Password</label> 
+                    <input type="password" class="form-control" id="getPassword1" name="password" value="password1" required>
+                </div>    
+                <input type='submit' class="btn btn-primary" value="Login">
+            </form>
+            <p> <a href="#">Need to Register?</a></p>
 
-The establishment of the Premier League meant a historical divide of the top-level division from the Football League. The new league would not be part of the Football League, with traditions going back to the 1880s. Yet, it would continue to be a part of the league system – the worst placed teams in the Premier League would be relegated to the second level and the best placed teams would vice versa be promoted from the second level to Premier League.</p>
+        </div> 
+    </div>   
       
-      
+   
+    <script src="custom-js/custom.js"></script> 
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>

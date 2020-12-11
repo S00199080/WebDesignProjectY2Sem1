@@ -1,13 +1,17 @@
 body {
   margin: 0;
   font-family: "Lato", sans-serif;
+  background-image: url(images/stadium.jpg);
+  color: white;
+  background-size: cover;
+
 }
 
 .sidebar {
   margin: 0;
   padding: 0;
   width: 200px;
-  background-color: darkslategrey;
+  background-color: darkgray;
   position: fixed;
   height: 100%;
   overflow: auto;
@@ -36,8 +40,42 @@ div.content {
   height: 1000px;
 }
 
-@media (max-width: 40em) {
+@media (max-width: 68em) {
 .sidebar {
 display: none;
 }
 }
+
+
+
+p.History1{
+   padding-left: 12.7em 
+    
+}
+
+@media (max-width: 68em) {
+p.History1 {
+padding-left:0.1em;
+}
+}
+
+h1.PageHead1{
+    text-align: center;
+    
+}
+
+
+@media(max-width: 48em)
+{
+.centre{
+    
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  height: 20em;
+
+    
+    }}
+
+
