@@ -47,20 +47,30 @@ display: none;
 }
 
 
-
 p.History1{
-   padding-left: 12.7em 
+   padding-left: 11.6em;
+   background-color: white;
+   color: black;
+    border-radius: 1em;
+    
+    font-size: 1.1em;
     
 }
 
 @media (max-width: 68em) {
 p.History1 {
 padding-left:0.1em;
+    border-radius: 1em;
+    margin-left: 2em;
+    margin-right: 2em;
+    font-size: 1.1em;
 }
 }
 
 h1.PageHead1{
     text-align: center;
+    font-family: serif;
+    font-size: 2.7em
     
 }
 
