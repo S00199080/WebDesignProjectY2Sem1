@@ -3,7 +3,7 @@ body {
   font-family: "Lato", sans-serif;
   background-image: url(images/stadium.jpg);
   color: white;
-  background-size: cover;
+  background-size:cover;
 
 }
 
@@ -48,12 +48,12 @@ display: none;
 
 
 p.History1{
-   padding-left: 11.6em;
+   padding-left: 7em;
    background-color: white;
    color: black;
     border-radius: 1em;
     
-    font-size: 1.1em;
+    font-size: 1.8em;
     
 }
 
@@ -82,10 +82,46 @@ h1.PageHead1{
   display: block;
   margin-left: auto;
   margin-right: auto;
-  width: 8em;
-  height: 8em;
+  width: 9em;
+  height: 9em;
 
     
     }}
+
+  .jumbotron {
+    background-color: #f4511e;
+    color: white;
+    padding: 100px 55px;
+  }
+  .container-fluid {
+    padding: 50px 50px;
+      background-color: darkviolet;
+      text-align: center;
+    
+  }
+ .text-center
+{
+    background-color: #f4511e;
+}
+
+  .bg-grey {
+    background-color: deepskyblue;
+      
+  
+  
+  }
+  @media screen and (max-width: 768px) {
+    .col-sm-4 {
+      text-align: center;
+      margin: 25px 0;
+        
+    }
+  }
+.col-sm-8
+{
+    text-align: center;
+    
+}
+
 
 
