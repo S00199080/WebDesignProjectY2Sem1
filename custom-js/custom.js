@@ -1,53 +1,46 @@
 $(document).ready(function(){
-    //**
-    // Begin : all the code between Begin and End is executed on page load
-    //**
+    
       
-    // set the checkout figure
+    
     if (localStorage.getItem('checkout') == null) {  
         localStorage.setItem('checkout',0);
     }
     $("#checkout" ).html(localStorage.getItem('checkout'));
 
-    // check if user is logged in or logged out..
+   
     var loggedin=localStorage.getItem('loggedIn'); 
 
       
     if (loggedin==1) {
-        // change the text from Login to Logout
+        
         $("#loginlogout" ).html("Logout" );
-        // hide User details nav item by applying bootstrap d-none which hides the nav item
+       
         $( "#accountdetails" ).removeClass( "d-none" );   
-         $( "#accountdetails" ).removeClass( "show" ); // this is put in automatically by bootstrap so we have to remove the class
+         $( "#accountdetails" ).removeClass( "show" );  
       
     } else{
-        // use addClass to hide the display of User Details
+        
         $( "#accountdetails" ).addClass( "d-none" );
-        // change the text from Logout to Login
+       
         $( "#loginlogout" ).html("Login" );
-        // set the href propery to point to login.html if user clicks on it
+       
         $("#loginlogout" ).prop("href", "login.html");
     } 
 
         
 
-    // this code is run everytime this js file is loaded.   
-      
-    /* localstroage is a javascript object that allows us to store key/value pairs 
-    https://javascript.info/localstorage */
+    
     if (localStorage.getItem('userdetails') === null) {  
-        // if userdetails is null, that means it has not been loaded before. we not initialise userdetails object
+        
         var userDetails = {firstName:"Walter", lastName:"Mitty", dob:"1990-12-01",address1:"Buenos Ayres Drive", address2:"Strandhill", address3:"Co. Sligo"};
-        // now we store the userdetails object as a localstorage object but localstore only stores text and userdetails is a javascript object
-        // we convert a javascript object ot a string using JSON.stringify - we are being expedient!
+        
         localStorage.setItem('userdetails',JSON.stringify(userDetails));
     } else {
-        // if localstorage variable userdetails is already created - load it to javascript oject. JSON.parse turns it back into an javascript object
+        
         userDetails=JSON.parse(localStorage.getItem('userdetails'));
     }
 
-    // we only run this code if an id of udetails is on the html page we are currently on - makes the code a little bit more efficient
-    // if the length > 0 it means we are on the right page - and we can populdate the form fields!!!
+   
     if ($('#udetails').length > 0) {
         $('input[name="firstname"]').val(userDetails.firstName);         
         $('input[name="lastname"]').val(userDetails.lastName);
@@ -56,18 +49,13 @@ $(document).ready(function(){
         $('input[name="address2"]').val(userDetails.address2);
         $('input[name="address3"]').val(userDetails.address3);
     }
-      
-    //** 
-    // End : all the code abouve is executed on page load
-    //**  
+   
 
       
-    // All code below is executed by event - e.g. form submit event, click event
-
-    // wait for loginlogout button to be clicked - a click here means the user has chosen to logout
+  
     $("#loginlogout").button().click(function(){
         if (loggedin==1) {
-            // set the flag so that user is not logged in
+   
             localStorage.setItem('loggedIn',0);
             window.location.href = "login.html";
         }  else 
@@ -76,17 +64,17 @@ $(document).ready(function(){
     });       
       
       
-    // wait for submit button to be clicked on login form - this code only invoked if login form submit button clicked
+    
     $('form[name="login"]' ).submit(function( event ) {
         var email=$('input[name="email"]').val();
         var password =$('input[name="password"]').val();
-        if (email=="wmitty@email.com" && password=="password1")  {   
-            // successful login, user redirected to shop.html
+        if (email=="User@email.ie" && password=="password123")  {   
+            
             localStorage.setItem('loggedIn',1);    
-            window.location.href = "shop.html";  // redirect to shop page
+            window.location.href = "shop.html";  
         }
         else {
-            // login unsuccessful, error message appears
+            
             localStorage.setItem('loggedIn',0);
             $( "#loginerror" ).addClass( "d-block" );
         }

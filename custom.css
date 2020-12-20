@@ -7,32 +7,7 @@ body {
 
 }
 
-.sidebar {
-  margin: 0;
-  padding: 0;
-  width: 200px;
-  background-color: darkgray;
-  position: fixed;
-  height: 100%;
-  overflow: auto;
-}
 
-.sidebar a {
-  display: block;
-  color: black;
-  padding: 16px;
-  text-decoration: none;
-}
- 
-.sidebar a.active {
-  background-color: #4CAF50;
-  color: white;
-}
-
-.sidebar a:hover:not(.active) {
-  background-color: #855;
-  color: white;
-}
 
 div.content {
   margin-left: 200px;
@@ -48,10 +23,10 @@ display: none;
 
 
 p.History1{
-   padding-left: 7em;
-   background-color: white;
-   color: black;
-    border-radius: 1em;
+   padding-left: 0em;
+  
+   color: white;
+    
     
     font-size: 1.8em;
     
@@ -59,11 +34,11 @@ p.History1{
 
 @media (max-width: 68em) {
 p.History1 {
-padding-left:0.1em;
-    border-radius: 1em;
-    margin-left: 2em;
-    margin-right: 2em;
-    font-size: 1.1em;
+padding-left:0.0em;
+    border-radius: em;
+    margin-left: .00em;
+    margin-right: .00em;
+    font-size: 1.5em;
 }
 }
 
@@ -72,6 +47,11 @@ h1.PageHead1{
     font-family: serif;
     font-size: 2.7em
     
+}
+
+h4.PremOutcome
+{
+     font-size: 1.6em;
 }
 
 
@@ -88,10 +68,15 @@ h1.PageHead1{
     
     }}
 
-  .jumbotron {
+@media(max-width: 48em)
+{
+  .jumbotron{
     background-color: #f4511e;
     color: white;
     padding: 100px 55px;
+    }
+      
+        
   }
   .container-fluid {
     padding: 50px 50px;
@@ -122,6 +107,13 @@ h1.PageHead1{
     text-align: center;
     
 }
+
+
+
+
+
+
+
 
 
 
